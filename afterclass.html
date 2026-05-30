@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+
+<h2>JavaScript Error Handling</h2>
+
+<p>This example demonstrates how to use <b>catch</b> to display an error.</p>
+
+<p id="error_message"></p>
+
+<p id="number_result"></p>
+
+<p id="string_result"></p>
+
+<script>
+
+try {
+
+var x = prompt("enter 1st no");
+
+var y = prompt("enter 2nd no");
+
+document.getElementById("number_result").innerHTML = x + y;
+
+}
+
+catch (err) {
+
+document.getElementById("error_message").innerHTML = err.message;
+
+}
+
+</script>
+
+</body>
+
+</html>
